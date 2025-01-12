@@ -10,17 +10,17 @@ class Job
             [
                 'id' => 1,
                 'title' => 'Web Developer',
-                'description' => 'We are looking for a web developer'
+                'salary' => '$40000'
             ],
             [
                 'id' => 2,
                 'title' => 'Graphic Designer',
-                'description' => 'We are looking for a graphic designer'
+                'salary' => '$50000'
             ],
             [
                 'id' => 3,
                 'title' => 'Project Manager',
-                'description' => 'We are looking for a project manager'
+                'salary' => '$70000'
             ]
         ];
     }
