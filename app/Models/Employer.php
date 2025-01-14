@@ -9,4 +9,11 @@ class Employer extends Model
 {
 
     use HasFactory;
+
+    protected $table = 'employers';
+
+    public function jobs()
+    {
+        return Employer::hasMany(Job::class);
+    }
 }

@@ -4,13 +4,14 @@ use Illuminate\Support\Facades\Route;
 use App\Models\Job;
 use App\Models\Post;
 
+
 Route::get('/', function () {
     return view('welcome');
 });
 
 Route::get('/jobs', function () {
     return view('jobs', [
-        'jobs' => Job::all()
+        'jobs' => Job::with('employer')->get()
     ]);
 });
 
